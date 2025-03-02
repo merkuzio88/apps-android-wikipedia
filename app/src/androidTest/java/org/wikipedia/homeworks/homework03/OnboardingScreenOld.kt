@@ -4,7 +4,19 @@ import androidx.appcompat.widget.AppCompatImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.tabs.TabLayout
+import com.kaspersky.kaspresso.screens.KScreen
+import io.github.kakaocup.kakao.text.KButton
+import org.wikipedia.R
 import org.wikipedia.views.AppTextView
+
+object OnboardingScreenOld : KScreen<OnboardingScreenOld>() {
+    override val layoutId = R.layout.fragment_onboarding_pager
+    override val viewClass = null
+
+    val skipButton = KButton {
+        withId(R.id.fragment_onboarding_skip_button)
+    }
+}
 
 // Logo Wikipedia
 val wikiLogoImage = listOf(
